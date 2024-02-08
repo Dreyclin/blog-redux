@@ -1,9 +1,7 @@
-// Create store
 // Create actions and reducers
 
-import Form from "./components/Form/Form";
-import Post from "./features/posts/Post";
-
+import Form from "./features/posts/Form";
+import Posts from "./features/posts/Posts"
 
 function App() {
   return (
@@ -11,6 +9,7 @@ function App() {
       <div className="container">
         <h1 className="text-center">Blog-Redux</h1>
         <Form />
+        <Posts />
       </div>
     </div>
   );
