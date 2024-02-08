@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+// Create input form components
+// Create posts components
+// Create styling
+// Create store
+// Create actions and reducers
+
+import Form from "./components/Form/Form";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+      <div className="container">
+        <h1 className="text-center">Blog-Redux</h1>
+        <Form />
+      </div>
     </div>
   );
 }
