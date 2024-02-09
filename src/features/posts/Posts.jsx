@@ -1,8 +1,9 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import PostAuthor from "./PostAuthor";
+import Emojis from "./Emojis";
 
-
-export default function Posts() {
+export default function Posts(props) {
 
   const posts = useSelector(state => state.posts);
 
@@ -10,7 +11,8 @@ export default function Posts() {
     <div className="post">
       <h2 className="postTitle">{post.title}</h2>
       <p className="postContent">{post.content}</p>
-      <p className="postAuthor">by Unknown Author</p>
+      <PostAuthor userId={post.userId}/>
+      <Emojis />
     </div>
   ))
 

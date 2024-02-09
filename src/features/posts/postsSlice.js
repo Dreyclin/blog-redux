@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import { nanoid } from "@reduxjs/toolkit";
 
 const initialState = [
-    {id: 1, title: "Hello", content: "Content"}
+
 ]
 
 const postsSlice = createSlice({
@@ -15,10 +15,11 @@ const postsSlice = createSlice({
             },
             prepare: (
                 title,
-                content
+                content,
+                userId
             ) => {
                 const id = nanoid();
-                return {payload: {id, title, content}}
+                return {payload: {id, title, content, userId}}
             }
         }
     }
